@@ -1,12 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	// "slices"
+)
 
 func main() {
-  var a int = 10
-  var b int = 20
-  _ = b
-
-  fmt.Println(a)
-
+	reader := bufio.NewReader(os.Stdin)
+	input, _ := reader.ReadString('\n')
+	fmt.Println(input)
 }
